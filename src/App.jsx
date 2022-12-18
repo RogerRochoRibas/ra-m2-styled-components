@@ -1,26 +1,20 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { Text } from './components/atoms'
 import { Body } from './components/layout'
+import Buscador from './pages/Buscador'
 
 function App() {
   return (
     <Router className="App">
+      <Body>
       <Routes>
         <Route
           path="/"
           element={
-            <Body>
-              <Text as="h1">Hola a todos</Text>
-              <Text>Buenas tardes</Text>
-              <ul>
-                <Text as="li">A</Text>
-                <Text as="li">B</Text>
-                <Text as="li">C</Text>
-              </ul>
-            </Body>
+            <Buscador />
           }
         />
       </Routes>
+      </Body>
     </Router>
   )
 }
