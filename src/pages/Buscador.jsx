@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Grid } from '../styles'
 import { Map } from '../components/atoms'
-import CardHouse from '../components/molecules/CardHouse'
-import image from '../assets/house.jpg'
+import Houses from '../components/organisms/Houses'
 
 const BuscadorStyled = styled(Grid)`
   padding-left: 2rem;
@@ -19,35 +18,7 @@ const BuscadorStyled = styled(Grid)`
 function Buscador({ ...props }) {
   return (
     <BuscadorStyled columns="1fr 0.7fr" {...props}>
-      <BuscadorStyled columns="repeat(3, 1fr)" {...props}>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-      </BuscadorStyled>
+      <Houses />
       <BuscadorStyled columns="repeat(1, 1fr)" {...props}>
         <Map />
       </BuscadorStyled>
