@@ -6,14 +6,9 @@ function App() {
   return (
     <Router className="App">
       <Body>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Buscador />
-          }
-        />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Buscador />} />
+        </Routes>
       </Body>
     </Router>
   )

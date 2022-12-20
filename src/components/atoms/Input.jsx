@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const NumberInputStyled = styled.input`
+const InputStyled = styled.input`
   height: 40px;
   width: 300px;
   padding: 0.5rem;
@@ -18,12 +18,13 @@ const NumberInputStyled = styled.input`
   }
   &:focus {
     outline: 0 none;
+    border: 2px solid #457aac;
   }
 `
 
-function Input({onChange, id, type, placeholder }) {
+function Input({ onChange, id, type, placeholder }) {
   return (
-    <NumberInputStyled
+    <InputStyled
       type={type}
       name={id}
       placeholder={placeholder}
