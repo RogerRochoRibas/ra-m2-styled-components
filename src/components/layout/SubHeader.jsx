@@ -14,7 +14,11 @@ const SubHeaderStyled = styled(FlexBox)`
 function SubHeader({ ...props }) {
   return (
     <SubHeaderStyled align="center" direction="row" {...props}>
+      {/* Debería de ser un Select */}
+      {/* Falta el label */}
       <Input id="piso" placeholder="Piso, chalet o garaje... " />
+      {/* Debería de ser un Select */}
+      {/* Falta el label */}
       <Input id="location" placeholder="Madrid, Barcelona o Zaragoza..." />
       <Button color={colors.tertiary} padding="3px">
         <Icon>

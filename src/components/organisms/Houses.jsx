@@ -18,35 +18,36 @@ const HousesStyled = styled(Grid)`
 
 function Houses({ ...props }) {
   return (
-      <HousesStyled columns="repeat(3, 1fr)" {...props}>
-        <CardPhoto price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardPhoto>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-        <CardHouse price="939.000€" image={image}>
-          Piso en Barcelona, Gracia
-        </CardHouse>
-      </HousesStyled>
+    <HousesStyled columns="repeat(3, 1fr)" {...props}>
+      {/* Tienes que mapear, crea un array vacio y mapea */}
+      <CardPhoto price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardPhoto>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+      <CardHouse price="939.000€" image={image}>
+        Piso en Barcelona, Gracia
+      </CardHouse>
+    </HousesStyled>
   )
 }
 
