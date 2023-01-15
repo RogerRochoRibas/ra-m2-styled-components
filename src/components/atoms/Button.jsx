@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 const StyledButton = styled.button`
-  border-radius: 5px;
+  border-radius: 5px; // Si 5px es por defecto guardalo en dimensions.js
   border-style: hidden;
   padding: ${({ padding }) => padding || '5px'};
   color: white;
